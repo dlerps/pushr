@@ -1,4 +1,5 @@
 ﻿using System;
+using pushr.Arguments;
 
 namespace pushr
 {
@@ -6,8 +7,8 @@ namespace pushr
     {
         public static void Main(string[] args)
         {
-            foreach (string arg in args)
-                Console.WriteLine(arg);
+            PushrArgs pArgs = args.ReadArgs();
+            Console.WriteLine(pArgs);
         }
     }
 }

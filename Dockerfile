@@ -22,6 +22,8 @@ COPY --from=BUILD_ENV /src/build .
 
 ENV USR="Pinky"
 ENV PASS="World.Domination"
+ENV HOSTNAME="localhost:21"
+ENV REMOTE_PATH="/tmp"
 
 # Execute
-ENTRYPOINT dotnet pushr.dll ${USR} ${PASS}
+ENTRYPOINT dotnet pushr.dll ${USR} ${PASS} ${HOSTNAME} ${REMOTE_PATH}

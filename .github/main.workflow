@@ -18,7 +18,6 @@ action "Build" {
 }
 
 action "Publish" {
-  uses = "./"
+  uses = "./.github/publish"
   needs = ["Unit Test"]
-  args = "/src/publish.sh"
 }

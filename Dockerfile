@@ -1,4 +1,4 @@
-FROM microsoft:dotnet:2.2-sdk-alpine
+FROM microsoft/dotnet:2.2-sdk-alpine
 
 RUN mkdir /src
 COPY . /src

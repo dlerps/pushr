@@ -18,7 +18,7 @@ action "Build" {
 }
 
 action "Publish" {
-  uses = "./"
+  uses = "./DockerfilePublish"
   needs = ["Unit Test"]
   args = "/src/publish.sh"
 }

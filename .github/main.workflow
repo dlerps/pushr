@@ -18,6 +18,10 @@ action "Build" {
 }
 
 action "Publish" {
+<<<<<<< HEAD
   uses = "./.github/publish"
+=======
+  uses = "./DockerfilePublish"
+>>>>>>> 9992d4c8b27861d1e116bc5757b3ff47a10f70cc
   needs = ["Unit Test"]
 }

@@ -7,6 +7,7 @@ WORKDIR /src
 
 # Restore & Build
 COPY . .
+RUN ls -l
 RUN dotnet restore
 RUN dotnet build --no-restore -c Release -o build
 RUN dotnet publish --no-restore -c Release -o build
@@ -26,4 +27,4 @@ ENV HOSTNAME="localhost:21"
 ENV REMOTE_PATH="/tmp"
 
 # Execute
-ENTRYPOINT dotnet pushr.dll ${USR} ${PASS} ${HOSTNAME} ${REMOTE_PATH}
+ENTRYPOINT dotnet Pushr.dll ${USR} ${PASS} ${HOSTNAME} ${REMOTE_PATH}

@@ -3,6 +3,11 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp2.2</TargetFramework>
+    <author>Daniel Lerps</author>
   </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="DDev.Tools.Standard" Version="1.5.0" />
+  </ItemGroup>
 
 </Project>

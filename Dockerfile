@@ -4,7 +4,7 @@ RUN mkdir /src
 COPY . /src
 WORKDIR /src
 
-RUN chmod +x unit.tests.sh
+RUN chmod +x *.sh
 
 RUN ls -l
 

@@ -1,6 +1,6 @@
 using System.Text;
 
-namespace pushr.Arguments
+namespace Pushr.Arguments
 {
     public struct PushrArgs
     {

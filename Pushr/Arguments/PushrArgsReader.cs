@@ -2,7 +2,7 @@ using System;
 using System.Linq;
 using DDev.Tools.Extensions;
 
-namespace pushr.Arguments
+namespace Pushr.Arguments
 {    
     public static class PushrArgsReader
     {

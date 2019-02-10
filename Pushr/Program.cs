@@ -1,7 +1,7 @@
 ﻿using System;
-using pushr.Arguments;
+using Pushr.Arguments;
 
-namespace pushr
+namespace Pushr
 {
     public class Program
     {

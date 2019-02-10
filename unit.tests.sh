@@ -2,8 +2,6 @@
 
 set -e
 
-ls -l
-
 echo "Running Unit Tests"
 cd Pushr.Test
 

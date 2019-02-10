@@ -6,4 +6,6 @@ WORKDIR /src
 
 RUN chmod +x unit.tests.sh
 
-ENTRYPOINT [ "unit.tests.sh" ]
+RUN ls -l
+
+CMD [ "/src/unit.tests.sh" ]

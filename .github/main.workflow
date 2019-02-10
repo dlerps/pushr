@@ -4,5 +4,5 @@ workflow "New workflow" {
 }
 
 action "Unit Test" {
-  uses = ".github/test"
+  uses = "./"
 }

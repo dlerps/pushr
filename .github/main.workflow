@@ -8,12 +8,12 @@ workflow "Main" {
 }
 
 action "Unit Test" {
-  uses = "./"
+  uses = "./DotNetCore.Dockerfile"
   needs = ["Build"]
 }
 
 action "Build" {
-  uses = "./"
+  uses = "./DotNetCore.Dockerfile"
   args = "/src/build.sh"
 }
 

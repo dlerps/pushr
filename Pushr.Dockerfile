@@ -12,7 +12,9 @@ RUN dotnet restore
 
 COPY ./Pushr ./
 
-RUN dotnet build --no-restore -o /out
+RUN dotnet build --no-restore
+RUN dotnet publish --no-restore -o /out
+
 
 
 FROM microsoft/dotnet:2.2-runtime-alpine AS RUN_ENV

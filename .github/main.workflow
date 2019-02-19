@@ -5,7 +5,7 @@ workflow "Main" {
 
 action "Docker Build" {
   uses = "actions/docker/cli@master"
-  args = "build -t dlerps/pushr:test-1 -f Pushr.Dockerfile ."
+  args = "build -t dlerps/pushr:latest -f Pushr.Dockerfile ."
 }
 
 action "Docker Hub Login" {

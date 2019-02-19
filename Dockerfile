@@ -2,7 +2,7 @@ FROM microsoft/dotnet:2.2-sdk AS BUILD_ENV
 
 ENV DOTNET_CLI_TELEMETRY_OPTOUT 1
 
-RUN /out
+RUN mkdir /out
 RUN mkdir /build
 WORKDIR /build
 
